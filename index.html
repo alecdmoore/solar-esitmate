@@ -26,6 +26,10 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/928104253c.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         background-color: #eeeeee;
@@ -40,6 +44,12 @@
       .output {
         text-align: center;
       }
+      .button {
+        background: dodgerblue;
+        border-radius: 3px;
+        border-color: dodgerblue;
+        color: rgb(241, 241, 241);
+      }
     </style>
     <title>Solar System Builder</title>
   </head>
@@ -48,7 +58,7 @@
       <h1>Solar System Builder</h1>
       <form id="address">
         <input type="text" name="address" id="address" placeholder="Address" />
-        <button type="submit">Enter</button>
+        <button type="submit" class="button">Enter</button>
       </form>
       <p>Click map to add solar panels</p>
     </div>
