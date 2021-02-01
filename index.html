@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMCVbGU76QG2WiIysaQHETDfmPWNG9JuU"
+      async
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet-src.js"
+      integrity="sha512-I5Hd7FcJ9rZkH7uD01G3AjsuzFy3gqz7HIJvzFZGFt2mrCS4Piw9bYZvCgUE0aiJuiZFYIJIwpbNnDIM6ohTrg=="
+      crossorigin=""
+    ></script>
+
+    <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js"></script>
+    <style>
+      #mapid {
+        height: 400px;
+      }
+    </style>
+    <title>Solar System Builder</title>
+  </head>
+  <body>
+    <h1>Solar System Builder</h1>
+    <form id="address">
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" />
+      <button type="submit">Enter</button>
+    </form>
+    <div id="mapid"></div>
+    <div id="pvwatts-output">
+      <h2 id="annual-power-output"></h2>
+      <h2 id="annual-power-cost"></h2>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
